@@ -126,10 +126,12 @@ header {
 
 .novidades {
     background-color: #F5DCDC;
+    background: linear-gradient(#F5DCDC, #BEBEF4);
 }
 
 .mais-vendidos {
     background-color: #DCDCF5;
+    background: linear-gradient(#DCDC5, #F4BEBE);
 }
 
 footer {
@@ -165,7 +167,88 @@ footer {
     
     /*imagem replacezment*/
     text-indent: -9999px;
+}
+
+.menu-opcoes a:hover {
+    color: #007DC6;
+}
+
+.menu-opcoes a:active {
+    color: #867DC6;
+}
+
+.menu-departamentos li ul {
+    display: none;
     
 }
+
+.menu-departamentos li:hover ul {
+    display: block; 
+}
+
+.menu-departamentos ul ul li {
+    background-color: #DCDCDC;  
+}
+
+.menu-departamentos ul ul li:hover {
+    background-color: aqua;
+}
+
+.menu-departamentos li li a:before {
+content: '- ';
+}
+
+.menu-departamentos li li a:before {
+    content: '\272A';
+    padding-right: 3px;
+}
+
+.painel h2:before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}
+
+/*
+selecione as primeiras linhas dos parágrafos que não são precedidos por outros parágrafos
+:not(p) + p::first-line {
+font-variant: small-caps;
+}
+*/
+
+.painel {
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.painel li {
+    transition: 0.7s ease-out;
+}
+
+.painel li:hover{
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s ease-in;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.painel h2 {
+    text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
+}
+
+.painel li:nth-child(2n):hover {
+transform: scale(1.2) rotate(5deg);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
